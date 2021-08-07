@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tea_Estate", "WindowsFormsApp1\Tea_Estate.csproj", "{19A56D9A-9C05-4FF8-ABE2-E33C3FF7AE24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A56D9A-9C05-4FF8-ABE2-E33C3FF7AE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A56D9A-9C05-4FF8-ABE2-E33C3FF7AE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A56D9A-9C05-4FF8-ABE2-E33C3FF7AE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A56D9A-9C05-4FF8-ABE2-E33C3FF7AE24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCCAECD0-0436-49B6-BC50-C17DEDF3436C}
+	EndGlobalSection
+EndGlobal
