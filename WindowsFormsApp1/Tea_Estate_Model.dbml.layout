@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 14.75" name="Tea_Estate_Model">
+  <DataContextMoniker Name="/Tea_Estate_ModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="134ee9bf-c24b-4b5e-9763-9e71dc0c6ea4" absoluteBounds="0.75, 0.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4b63476-7b1c-4e0c-845f-182c4b835ca5" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1e59737-36ac-46cc-8b8b-c96f86c1fe5c" absoluteBounds="3.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Agreement_Gov" />
+      <nestedChildShapes>
+        <elementListCompartment Id="055973b7-ae1b-49dd-b1b9-7b5dfb1d3ab6" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2aa0ec1-4d7c-4e50-88de-9f4da150064e" absoluteBounds="3.75, 4.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Agreement_Lease" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8edc9da0-acc4-46cf-91a2-841f9933f87d" absoluteBounds="3.765, 5.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f394ca8-0fb1-416c-add1-5b524e86e5d5" absoluteBounds="6.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Changes_To_The_Base_Table" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6522e96-aa6a-42c7-9750-459fe0c4838e" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2c0e4ab-2933-4d2a-9150-dd283eb52c86" absoluteBounds="6.75, 3.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Document" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c391358e-9940-4fc4-99b0-959347ce65c1" absoluteBounds="6.765, 4.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="961d8f2e-2ced-4008-87e7-f89a5ebf17d4" absoluteBounds="6.75, 7.75, 2, 2.9247054036458318">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Due_Payment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27e25d7d-c868-4e8a-8793-4dec52a658df" absoluteBounds="6.765, 8.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4dae175c-12c8-493e-8c3c-a80021ffc23f" absoluteBounds="0.75, 8.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Estate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee94732f-b865-4913-94ab-d3848cfe8101" absoluteBounds="0.765, 9.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15a4a27d-3603-46ea-a487-82d1f0403d3f" absoluteBounds="9.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Lease" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecb76ca7-9013-4bc8-ba2f-9d8a210e145b" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28444bec-54c0-4672-8cbe-13cc88cb76ac" absoluteBounds="9.75, 4.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Leaser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea727179-bae7-47af-a3d6-2506c8527c97" absoluteBounds="9.765, 5.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19bb86b0-01ac-4ba1-95c9-10783e719699" absoluteBounds="9.75, 7.75, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Property" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3cf2d81d-9e34-4549-adab-bba3eb314bef" absoluteBounds="9.765, 8.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75239dcd-d4e7-4b57-b882-0bcdac6080c4" absoluteBounds="3.75, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/System_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acfb8ae0-b2b7-4e40-a109-e7629840771f" absoluteBounds="3.765, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7fa3ad04-0915-4420-8db7-18fb51761e9d" absoluteBounds="6.75, 11.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Tea_Estate_ModelDataContext/Valuation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3d0b35d-0fa3-48d2-9b59-67bea1bc7bee" absoluteBounds="6.765, 12.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
