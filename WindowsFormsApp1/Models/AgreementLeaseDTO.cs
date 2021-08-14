@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models
 {
-    public class AgreementLease
+    public class AgreementLeaseDTO
     {
         public string AgreementId { get; set; }
         public Guid LeaserId { get; set; }

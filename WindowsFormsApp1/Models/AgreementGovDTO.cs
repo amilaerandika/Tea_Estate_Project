@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models
 {
-    public class AgreementGov
+    public class AgreementGovDTO
     {
         public string AgreementNo { get; set; }
         public string AgreementName { get; set; }
@@ -15,7 +15,6 @@ namespace WindowsFormsApp1.Models
         public string Remarks { get; set; }
         public Guid DocumentId { get; set; }
         public Guid SystemUserId { get; set; }
-        public DateTime EntryDate { get; set; }
 
     }
 }

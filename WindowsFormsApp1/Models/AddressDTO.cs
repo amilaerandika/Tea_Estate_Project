@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models
 {
-    public class Address
+    public class AddressDTO
     {
         public Guid AddressID { get; set; }
         public string FromTable { get; set; }
