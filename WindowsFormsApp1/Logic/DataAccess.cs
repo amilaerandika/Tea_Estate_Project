@@ -8,12 +8,7 @@ namespace WindowsFormsApp1.Logic
 {
     public static class DataAccess
     {
-        public static Tea_Estate_ModelDataContext db;
-
-        public static void CreateDBConnection()
-        {
-            db = new Tea_Estate_ModelDataContext();
-        }
+        public static Tea_Estate_ModelDataContext db = new Tea_Estate_ModelDataContext();
 
         public static void SaveChangesToTheDB()
         {

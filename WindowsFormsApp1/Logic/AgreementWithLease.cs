@@ -10,12 +10,10 @@ namespace WindowsFormsApp1.Logic
     public class AgreementWithLease
     {
         private AgreementLeaseDTO _agreement = new AgreementLeaseDTO();
-        Tea_Estate_ModelDataContext db;
 
         public AgreementWithLease(AgreementLeaseDTO agreement)
         {
             _agreement = agreement;
-            db = new Tea_Estate_ModelDataContext();
         }
 
         public bool SaveAgreementWithLease()
@@ -34,8 +32,8 @@ namespace WindowsFormsApp1.Logic
 
             try
             {
-                db.Agreement_Leases.InsertOnSubmit(agreement_Lease);
-                db.SubmitChanges();
+                DataAccess.db.Agreement_Leases.InsertOnSubmit(agreement_Lease);
+                DataAccess.SaveChangesToTheDB();
                 return true;
             }
             catch

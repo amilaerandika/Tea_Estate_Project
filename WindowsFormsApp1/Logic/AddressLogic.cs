@@ -11,7 +11,6 @@ namespace WindowsFormsApp1.Logic
     public class AddressLogic
     {
         private AddressDTO _address = new AddressDTO();
-        Tea_Estate_ModelDataContext dbContext = new Tea_Estate_ModelDataContext();
 
         public AddressLogic(AddressDTO addressDTO)
         {
@@ -35,8 +34,8 @@ namespace WindowsFormsApp1.Logic
 
             try 
             {
-                dbContext.Addresses.InsertOnSubmit(address);
-                dbContext.SubmitChanges();
+                DataAccess.db.Addresses.InsertOnSubmit(address);
+                DataAccess.SaveChangesToTheDB();
                 return address.Address_ID;
             }
             catch 

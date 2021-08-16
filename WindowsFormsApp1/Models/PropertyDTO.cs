@@ -16,6 +16,6 @@ namespace WindowsFormsApp1.Models
         public string Valuation { get; set; }
         public decimal CurrentValue { get; set; }
         public Guid SystemUserId { get; set; }
-        public Guid EntryDate { get; set; }
+        public DateTime EntryDate { get; set; }
     }
 }

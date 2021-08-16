@@ -10,11 +10,11 @@ namespace WindowsFormsApp1.Models
     {
         public Guid LeaserId { get; set; }
         public string Name { get; set; }
-        public string PhoneNumberId { get; set; }
+        public Guid PhoneNumberId { get; set; }
         public string Email { get; set; }
         public Guid AddressId { get; set; }
         public Guid SystemUserId { get; set; }
-        public Guid EntryDate { get; set; }
+        public DateTime EntryDate { get; set; }
 
     }
 }
