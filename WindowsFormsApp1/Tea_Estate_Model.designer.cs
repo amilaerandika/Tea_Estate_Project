@@ -110,6 +110,14 @@ namespace WindowsFormsApp1
 			}
 		}
 		
+		public System.Data.Linq.Table<Encroachment> Encroachments
+		{
+			get
+			{
+				return this.GetTable<Encroachment>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Estate> Estates
 		{
 			get
@@ -134,6 +142,22 @@ namespace WindowsFormsApp1
 			}
 		}
 		
+		public System.Data.Linq.Table<Login_Activity> Login_Activities
+		{
+			get
+			{
+				return this.GetTable<Login_Activity>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Payment> Payments
+		{
+			get
+			{
+				return this.GetTable<Payment>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Property> Properties
 		{
 			get
@@ -142,11 +166,35 @@ namespace WindowsFormsApp1
 			}
 		}
 		
+		public System.Data.Linq.Table<Reminder> Reminders
+		{
+			get
+			{
+				return this.GetTable<Reminder>();
+			}
+		}
+		
 		public System.Data.Linq.Table<System_User> System_Users
 		{
 			get
 			{
 				return this.GetTable<System_User>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Telephone_Number> Telephone_Numbers
+		{
+			get
+			{
+				return this.GetTable<Telephone_Number>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Transaction_Change> Transaction_Changes
+		{
+			get
+			{
+				return this.GetTable<Transaction_Change>();
 			}
 		}
 		
@@ -1275,6 +1323,213 @@ namespace WindowsFormsApp1
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Encroachment")]
+	public partial class Encroachment
+	{
+		
+		private System.Guid _Encroachment_ID;
+		
+		private string _Estate_ID;
+		
+		private string _Property_ID;
+		
+		private string _Name_Of_User;
+		
+		private System.Nullable<System.Guid> _Address_ID;
+		
+		private string _Telephone_Number;
+		
+		private string _Size;
+		
+		private System.Nullable<System.DateTime> _Started_Date;
+		
+		private string _Remarks;
+		
+		private System.Guid _System_User_ID;
+		
+		private System.DateTime _Entry_Date;
+		
+		public Encroachment()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Encroachment_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid Encroachment_ID
+		{
+			get
+			{
+				return this._Encroachment_ID;
+			}
+			set
+			{
+				if ((this._Encroachment_ID != value))
+				{
+					this._Encroachment_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estate_ID", DbType="NVarChar(50)")]
+		public string Estate_ID
+		{
+			get
+			{
+				return this._Estate_ID;
+			}
+			set
+			{
+				if ((this._Estate_ID != value))
+				{
+					this._Estate_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Property_ID", DbType="NVarChar(50)")]
+		public string Property_ID
+		{
+			get
+			{
+				return this._Property_ID;
+			}
+			set
+			{
+				if ((this._Property_ID != value))
+				{
+					this._Property_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name_Of_User", DbType="NVarChar(50)")]
+		public string Name_Of_User
+		{
+			get
+			{
+				return this._Name_Of_User;
+			}
+			set
+			{
+				if ((this._Name_Of_User != value))
+				{
+					this._Name_Of_User = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Address_ID", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> Address_ID
+		{
+			get
+			{
+				return this._Address_ID;
+			}
+			set
+			{
+				if ((this._Address_ID != value))
+				{
+					this._Address_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telephone_Number", DbType="NVarChar(50)")]
+		public string Telephone_Number
+		{
+			get
+			{
+				return this._Telephone_Number;
+			}
+			set
+			{
+				if ((this._Telephone_Number != value))
+				{
+					this._Telephone_Number = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Size", DbType="NVarChar(50)")]
+		public string Size
+		{
+			get
+			{
+				return this._Size;
+			}
+			set
+			{
+				if ((this._Size != value))
+				{
+					this._Size = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Started_Date", DbType="Date")]
+		public System.Nullable<System.DateTime> Started_Date
+		{
+			get
+			{
+				return this._Started_Date;
+			}
+			set
+			{
+				if ((this._Started_Date != value))
+				{
+					this._Started_Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="NVarChar(500)")]
+		public string Remarks
+		{
+			get
+			{
+				return this._Remarks;
+			}
+			set
+			{
+				if ((this._Remarks != value))
+				{
+					this._Remarks = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_System_User_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid System_User_ID
+		{
+			get
+			{
+				return this._System_User_ID;
+			}
+			set
+			{
+				if ((this._System_User_ID != value))
+				{
+					this._System_User_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Entry_Date", DbType="DateTime NOT NULL")]
+		public System.DateTime Entry_Date
+		{
+			get
+			{
+				return this._Entry_Date;
+			}
+			set
+			{
+				if ((this._Entry_Date != value))
+				{
+					this._Entry_Date = value;
+				}
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Estate")]
 	public partial class Estate
 	{
@@ -1752,6 +2007,330 @@ namespace WindowsFormsApp1
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Login_Activity")]
+	public partial class Login_Activity
+	{
+		
+		private System.Guid _Login_Activity_ID;
+		
+		private System.DateTime _Login_Time;
+		
+		private int _Attempt;
+		
+		private string _Mac_Address;
+		
+		private System.Guid _System_User_ID;
+		
+		private System.Nullable<System.DateTime> _Logout_Time;
+		
+		public Login_Activity()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Login_Activity_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid Login_Activity_ID
+		{
+			get
+			{
+				return this._Login_Activity_ID;
+			}
+			set
+			{
+				if ((this._Login_Activity_ID != value))
+				{
+					this._Login_Activity_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Login_Time", DbType="DateTime NOT NULL")]
+		public System.DateTime Login_Time
+		{
+			get
+			{
+				return this._Login_Time;
+			}
+			set
+			{
+				if ((this._Login_Time != value))
+				{
+					this._Login_Time = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Attempt", DbType="Int NOT NULL")]
+		public int Attempt
+		{
+			get
+			{
+				return this._Attempt;
+			}
+			set
+			{
+				if ((this._Attempt != value))
+				{
+					this._Attempt = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mac_Address", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Mac_Address
+		{
+			get
+			{
+				return this._Mac_Address;
+			}
+			set
+			{
+				if ((this._Mac_Address != value))
+				{
+					this._Mac_Address = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_System_User_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid System_User_ID
+		{
+			get
+			{
+				return this._System_User_ID;
+			}
+			set
+			{
+				if ((this._System_User_ID != value))
+				{
+					this._System_User_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Logout_Time", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Logout_Time
+		{
+			get
+			{
+				return this._Logout_Time;
+			}
+			set
+			{
+				if ((this._Logout_Time != value))
+				{
+					this._Logout_Time = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Payments")]
+	public partial class Payment
+	{
+		
+		private System.Guid _Payment_ID;
+		
+		private System.DateTime _Payment_Date;
+		
+		private System.Nullable<System.Guid> _Reminder_ID;
+		
+		private System.Nullable<System.Guid> _Due_Payment_ID;
+		
+		private decimal _Payment_Value;
+		
+		private string _Payment_Type;
+		
+		private string _Paid_By_Name;
+		
+		private string _Identification_Details;
+		
+		private string _Payment_Remarks;
+		
+		private System.Guid _System_User_ID;
+		
+		private System.DateTime _Entry_Date;
+		
+		public Payment()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid Payment_ID
+		{
+			get
+			{
+				return this._Payment_ID;
+			}
+			set
+			{
+				if ((this._Payment_ID != value))
+				{
+					this._Payment_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_Date", DbType="Date NOT NULL")]
+		public System.DateTime Payment_Date
+		{
+			get
+			{
+				return this._Payment_Date;
+			}
+			set
+			{
+				if ((this._Payment_Date != value))
+				{
+					this._Payment_Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Reminder_ID", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> Reminder_ID
+		{
+			get
+			{
+				return this._Reminder_ID;
+			}
+			set
+			{
+				if ((this._Reminder_ID != value))
+				{
+					this._Reminder_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Due_Payment_ID", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> Due_Payment_ID
+		{
+			get
+			{
+				return this._Due_Payment_ID;
+			}
+			set
+			{
+				if ((this._Due_Payment_ID != value))
+				{
+					this._Due_Payment_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_Value", DbType="Decimal(18,0) NOT NULL")]
+		public decimal Payment_Value
+		{
+			get
+			{
+				return this._Payment_Value;
+			}
+			set
+			{
+				if ((this._Payment_Value != value))
+				{
+					this._Payment_Value = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_Type", DbType="NVarChar(50)")]
+		public string Payment_Type
+		{
+			get
+			{
+				return this._Payment_Type;
+			}
+			set
+			{
+				if ((this._Payment_Type != value))
+				{
+					this._Payment_Type = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Paid_By_Name", DbType="NVarChar(200)")]
+		public string Paid_By_Name
+		{
+			get
+			{
+				return this._Paid_By_Name;
+			}
+			set
+			{
+				if ((this._Paid_By_Name != value))
+				{
+					this._Paid_By_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Identification_Details", DbType="NVarChar(300)")]
+		public string Identification_Details
+		{
+			get
+			{
+				return this._Identification_Details;
+			}
+			set
+			{
+				if ((this._Identification_Details != value))
+				{
+					this._Identification_Details = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Payment_Remarks", DbType="NVarChar(300)")]
+		public string Payment_Remarks
+		{
+			get
+			{
+				return this._Payment_Remarks;
+			}
+			set
+			{
+				if ((this._Payment_Remarks != value))
+				{
+					this._Payment_Remarks = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_System_User_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid System_User_ID
+		{
+			get
+			{
+				return this._System_User_ID;
+			}
+			set
+			{
+				if ((this._System_User_ID != value))
+				{
+					this._System_User_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Entry_Date", DbType="DateTime NOT NULL")]
+		public System.DateTime Entry_Date
+		{
+			get
+			{
+				return this._Entry_Date;
+			}
+			set
+			{
+				if ((this._Entry_Date != value))
+				{
+					this._Entry_Date = value;
+				}
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Property")]
 	public partial class Property
 	{
@@ -1923,6 +2502,177 @@ namespace WindowsFormsApp1
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Reminder")]
+	public partial class Reminder
+	{
+		
+		private System.Guid _Reminder_ID;
+		
+		private System.Nullable<System.DateTime> _AddedDate;
+		
+		private string _Reminder_Type;
+		
+		private System.Nullable<System.Guid> _Document_ID;
+		
+		private bool _Is_Reminder_Active;
+		
+		private bool _Is_Reminder_Sent;
+		
+		private System.Nullable<decimal> _Reminder_Value;
+		
+		private System.Guid _System_User_ID;
+		
+		private System.DateTime _Entry_Date;
+		
+		public Reminder()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Reminder_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid Reminder_ID
+		{
+			get
+			{
+				return this._Reminder_ID;
+			}
+			set
+			{
+				if ((this._Reminder_ID != value))
+				{
+					this._Reminder_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AddedDate", DbType="Date")]
+		public System.Nullable<System.DateTime> AddedDate
+		{
+			get
+			{
+				return this._AddedDate;
+			}
+			set
+			{
+				if ((this._AddedDate != value))
+				{
+					this._AddedDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Reminder_Type", DbType="NVarChar(50)")]
+		public string Reminder_Type
+		{
+			get
+			{
+				return this._Reminder_Type;
+			}
+			set
+			{
+				if ((this._Reminder_Type != value))
+				{
+					this._Reminder_Type = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Document_ID", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> Document_ID
+		{
+			get
+			{
+				return this._Document_ID;
+			}
+			set
+			{
+				if ((this._Document_ID != value))
+				{
+					this._Document_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Is_Reminder_Active", DbType="Bit NOT NULL")]
+		public bool Is_Reminder_Active
+		{
+			get
+			{
+				return this._Is_Reminder_Active;
+			}
+			set
+			{
+				if ((this._Is_Reminder_Active != value))
+				{
+					this._Is_Reminder_Active = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Is_Reminder_Sent", DbType="Bit NOT NULL")]
+		public bool Is_Reminder_Sent
+		{
+			get
+			{
+				return this._Is_Reminder_Sent;
+			}
+			set
+			{
+				if ((this._Is_Reminder_Sent != value))
+				{
+					this._Is_Reminder_Sent = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Reminder_Value", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> Reminder_Value
+		{
+			get
+			{
+				return this._Reminder_Value;
+			}
+			set
+			{
+				if ((this._Reminder_Value != value))
+				{
+					this._Reminder_Value = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_System_User_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid System_User_ID
+		{
+			get
+			{
+				return this._System_User_ID;
+			}
+			set
+			{
+				if ((this._System_User_ID != value))
+				{
+					this._System_User_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Entry_Date", DbType="DateTime NOT NULL")]
+		public System.DateTime Entry_Date
+		{
+			get
+			{
+				return this._Entry_Date;
+			}
+			set
+			{
+				if ((this._Entry_Date != value))
+				{
+					this._Entry_Date = value;
+				}
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[System_User]")]
 	public partial class System_User
 	{
@@ -2053,6 +2803,240 @@ namespace WindowsFormsApp1
 				if ((this._Entry_Date != value))
 				{
 					this._Entry_Date = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Telephone_Number")]
+	public partial class Telephone_Number
+	{
+		
+		private System.Guid _Telephone_Number_ID;
+		
+		private string _Primary_Key_From;
+		
+		private string _From_Table;
+		
+		private string _Telephone_Number1;
+		
+		public Telephone_Number()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telephone_Number_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid Telephone_Number_ID
+		{
+			get
+			{
+				return this._Telephone_Number_ID;
+			}
+			set
+			{
+				if ((this._Telephone_Number_ID != value))
+				{
+					this._Telephone_Number_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Primary_Key_From", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Primary_Key_From
+		{
+			get
+			{
+				return this._Primary_Key_From;
+			}
+			set
+			{
+				if ((this._Primary_Key_From != value))
+				{
+					this._Primary_Key_From = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_From_Table", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string From_Table
+		{
+			get
+			{
+				return this._From_Table;
+			}
+			set
+			{
+				if ((this._From_Table != value))
+				{
+					this._From_Table = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="Telephone_Number", Storage="_Telephone_Number1", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Telephone_Number1
+		{
+			get
+			{
+				return this._Telephone_Number1;
+			}
+			set
+			{
+				if ((this._Telephone_Number1 != value))
+				{
+					this._Telephone_Number1 = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Transaction_Changes")]
+	public partial class Transaction_Change
+	{
+		
+		private System.Guid _Transaction_Entry_ID;
+		
+		private System.DateTime _Entered_Date;
+		
+		private System.Guid _System_User_ID;
+		
+		private string _Previous_Values;
+		
+		private string _New_Values;
+		
+		private string _From_Table;
+		
+		private string _Description;
+		
+		private string _Change_Type;
+		
+		public Transaction_Change()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Transaction_Entry_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid Transaction_Entry_ID
+		{
+			get
+			{
+				return this._Transaction_Entry_ID;
+			}
+			set
+			{
+				if ((this._Transaction_Entry_ID != value))
+				{
+					this._Transaction_Entry_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Entered_Date", DbType="DateTime NOT NULL")]
+		public System.DateTime Entered_Date
+		{
+			get
+			{
+				return this._Entered_Date;
+			}
+			set
+			{
+				if ((this._Entered_Date != value))
+				{
+					this._Entered_Date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_System_User_ID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid System_User_ID
+		{
+			get
+			{
+				return this._System_User_ID;
+			}
+			set
+			{
+				if ((this._System_User_ID != value))
+				{
+					this._System_User_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Previous_Values", DbType="NVarChar(500)")]
+		public string Previous_Values
+		{
+			get
+			{
+				return this._Previous_Values;
+			}
+			set
+			{
+				if ((this._Previous_Values != value))
+				{
+					this._Previous_Values = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_New_Values", DbType="NVarChar(500)")]
+		public string New_Values
+		{
+			get
+			{
+				return this._New_Values;
+			}
+			set
+			{
+				if ((this._New_Values != value))
+				{
+					this._New_Values = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_From_Table", DbType="NVarChar(50)")]
+		public string From_Table
+		{
+			get
+			{
+				return this._From_Table;
+			}
+			set
+			{
+				if ((this._From_Table != value))
+				{
+					this._From_Table = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(100)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this._Description = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Change_Type", DbType="NVarChar(50)")]
+		public string Change_Type
+		{
+			get
+			{
+				return this._Change_Type;
+			}
+			set
+			{
+				if ((this._Change_Type != value))
+				{
+					this._Change_Type = value;
 				}
 			}
 		}

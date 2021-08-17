@@ -7,10 +7,10 @@ using WindowsFormsApp1.Models;
 
 namespace WindowsFormsApp1.Logic
 {
-    public class SaveAgreementGov
+    public class AgreementGovSave
     {
         private AgreementGovDTO _agreementGov = new AgreementGovDTO();
-        public SaveAgreementGov(AgreementGovDTO agreementGovDTO)
+        public AgreementGovSave(AgreementGovDTO agreementGovDTO)
         {
             _agreementGov = agreementGovDTO;
         }

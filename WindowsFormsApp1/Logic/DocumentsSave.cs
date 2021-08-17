@@ -7,11 +7,11 @@ using WindowsFormsApp1.Models;
 
 namespace WindowsFormsApp1.Logic
 {
-    public class SaveDocuments
+    public class DocumentsSave
     {
         private DocumentDTO _documents = new DocumentDTO();
 
-        public SaveDocuments(DocumentDTO documentDTO)
+        public DocumentsSave(DocumentDTO documentDTO)
         {
             _documents = documentDTO;
         }

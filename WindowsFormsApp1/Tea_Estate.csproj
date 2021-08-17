@@ -150,12 +150,19 @@
     <Compile Include="Logic\AgreementWithLease.cs" />
     <Compile Include="Logic\DataAccess.cs" />
     <Compile Include="Logic\DuePaymentLogic.cs" />
+    <Compile Include="Logic\EncroachmentLogic.cs" />
     <Compile Include="Logic\EstateLogic.cs" />
     <Compile Include="Logic\LeaseLogic.cs" />
     <Compile Include="Logic\LeaserLogic.cs" />
+    <Compile Include="Logic\LoginActivityLogic.cs" />
+    <Compile Include="Logic\PaymentLogic.cs" />
     <Compile Include="Logic\PropertyLogic.cs" />
-    <Compile Include="Logic\SaveAgreementGov.cs" />
-    <Compile Include="Logic\SaveDocuments.cs" />
+    <Compile Include="Logic\AgreementGovSave.cs" />
+    <Compile Include="Logic\DocumentsSave.cs" />
+    <Compile Include="Logic\ReminderLogic.cs" />
+    <Compile Include="Logic\SystemUserLogic.cs" />
+    <Compile Include="Logic\TelephoneNumbersLogic.cs" />
+    <Compile Include="Logic\ValuationLogic.cs" />
     <Compile Include="Main_Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,11 +174,16 @@
     <Compile Include="Models\AgreementLeaseDTO.cs" />
     <Compile Include="Models\DocumentDTO.cs" />
     <Compile Include="Models\DuePaymentDTO.cs" />
+    <Compile Include="Models\EncroachmentDTO.cs" />
     <Compile Include="Models\EstateDTO.cs" />
     <Compile Include="Models\LeaseDTO.cs" />
     <Compile Include="Models\LeaserDTO.cs" />
+    <Compile Include="Models\LoginActivityDTO.cs" />
+    <Compile Include="Models\PaymentDTO.cs" />
     <Compile Include="Models\PropertyDTO.cs" />
+    <Compile Include="Models\ReminderDTO.cs" />
     <Compile Include="Models\SystemUserDTO.cs" />
+    <Compile Include="Models\TelephoneNumberDTO.cs" />
     <Compile Include="Models\ValuationDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
